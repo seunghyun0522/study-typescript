@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -83,7 +82,7 @@ function Coins() {
                 }}
               >
                 <Img
-                  src={`https://cryptocurrencyliveprices.com/img/${coin.id}.png`}
+                  src={`https://cryptoicon-api.vercel.app/api/icon/${coin.symbol.toLowerCase()}`}
                 />
                 {coin.name} &rarr;
               </Link>
